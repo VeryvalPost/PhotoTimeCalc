@@ -1,0 +1,42 @@
+.logo-background {
+  background-image: url('/backHeader.jpg'); /* Укажите путь к изображению */
+  background-size: cover; /* Автоматическое масштабирование */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Не повторять изображение */
+  width: 95vw; /* Занимает всю ширину окна */
+  height: 5vw; /* Занимает всю высоту окна */
+  border-radius: 30px;
+  z-index: 1; /* Текст будет поверх */
+  margin:0 auto; /* Убираем отступы */
+  }
+
+
+  .headerStyle {
+    z-index: 2;
+    color: white; /* Цвет текста */
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 0; /* Убираем padding */
+    margin:0 auto; /* Убираем отступы */
+    border-radius: 30px; /* Убираем закругления */
+    background-color: transparent; /* Убираем фон */
+    display: flex; /* Flexbox для центрирования содержимого */
+    flex-direction: column; /* Выровнять элементы по вертикали */
+    justify-content: center; /* Вертикальное центрирование текста */
+    align-items: center; /* Горизонтальное центрирование текста */
+    position: relative; /* Позиционирование для текста поверх фона */
+  }
+
+  .headerStyleh1, .headerStylp {
+    z-index: 2;
+    padding: 0; /* Убираем padding */
+    margin:0 auto; /* Убираем отступы */
+    border-radius: 30px; /* Убираем закругления */
+    background-color: transparent; /* Убираем фон */
+    display: flex; /* Flexbox для центрирования содержимого */
+    flex-direction: column; /* Выровнять элементы по вертикали */
+    justify-content: center; /* Вертикальное центрирование текста */
+    align-items: center; /* Горизонтальное центрирование текста */
+    color: white; /* Цвет текста */
+    position: relative; /* Позиционирование для текста поверх фона */
+  }

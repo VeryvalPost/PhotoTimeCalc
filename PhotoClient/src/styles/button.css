@@ -1,0 +1,12 @@
+.buttonMain {
+    width: 95vw; /* Занимает всю ширину окна */
+    height: 5vw; /* Занимает всю высоту окна */
+    border-radius: 30px;
+    z-index: 1; /* Текст будет поверх */
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #00b956;
+    color: white; /* Цвет текста */
+    font-size: xx-large;
+    font-weight: bold;
+    }

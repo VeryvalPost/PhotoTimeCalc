@@ -1,0 +1,98 @@
+/* Контейнер для центрирования всего содержимого */
+.center-container {
+  display: flex;
+  justify-content: center;    /* Центрирование по горизонтали */
+  align-items: center;        /* Центрирование по вертикали */
+  min-height: 100vh;          /* Контейнер занимает всю высоту экрана */
+  width: 100%;                /* Контейнер занимает всю ширину экрана */
+  flex-direction: column;     /* Элементы располагаются один за другим по вертикали */
+  box-sizing: border-box;     /* Чтобы padding не выходил за границы контейнера */
+}
+
+/* Контейнер для выпадающего меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 500px;
+  margin: 20px 0;            /* Добавляем отступы сверху и снизу */
+}
+
+/* Кнопка меню */
+.dropbtn {
+  background-color: white;   /* Белый фон */
+  color: black;              /* Чёрный текст */
+  border-color: black;
+  min-width: 500px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;        /* Скругленные углы */
+  transition: background-color 0.3s ease; /* Плавная анимация */
+  text-align: center;        /* Центрирование текста внутри кнопки */
+}
+
+/* Эффект при наведении на кнопку */
+.dropbtn:hover {
+  background-color: #5c5c5c; /* Светлее при наведении */
+}
+
+/* Выпадающее меню */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Светло-серый фон */
+  min-width: 500px;
+  padding-left: 16px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Тень */
+  z-index: 1;
+  border-radius: 5px;        /* Скругленные углы */
+  border: 1px solid #ddd;    /* Светлая граница */
+  overflow: hidden;          /* Обрезка содержимого за углами */
+}
+
+/* Элементы внутри выпадающего меню */
+.dropdown-content a {
+  color: #333;               /* Темно-серый цвет текста */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавные эффекты */
+}
+
+/* Эффект при наведении на пункты меню */
+.dropdown-content a:hover {
+  background-color: #ececec; /* Светлый оттенок серого при наведении */
+  color: #000;               /* Цвет текста при наведении */
+}
+
+/* Показ меню при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Добавляем плавное появление и исчезновение */
+.dropdown-content {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Стили для формы */
+.inputform {
+  background-color: white;   /* Белый фон */
+  color: black;              /* Чёрный текст */
+  border-color: black;
+  min-width: 500px;
+  margin: 20px 0;            /* Отступ сверху и снизу */
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;        /* Скругленные углы */
+  transition: background-color 0.3s ease; /* Плавная анимация */
+  text-align: center;        /* Центрирование текста */
+}
